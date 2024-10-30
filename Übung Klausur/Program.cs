@@ -111,6 +111,25 @@ namespace Übung_Klausur
 
         static void PasswortEingabe()
         {
+            int zähler = 3;
+            while(zähler > 0)
+            {
+                Console.WriteLine("Passwort bitte eingeben:");
+                string pwd = Console.ReadLine();
+
+                if (pwd == "geheim")
+                {
+                    Console.WriteLine("Angemeldet!");
+                    break;
+                }
+                zähler--;
+                Console.WriteLine($"Du hast noch: {zähler} Versuche übrig");
+            }
+            Console.ReadKey();
+
+
+
+            /*
             for (int zähler = 3; zähler > 0; zähler--)
             {
                 Console.WriteLine("Passwort Eingeben:");
@@ -127,6 +146,7 @@ namespace Übung_Klausur
                 }
             }
             Console.ReadKey();
+            */
         }
     
     }

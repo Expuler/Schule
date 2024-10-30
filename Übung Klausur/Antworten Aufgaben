@@ -1,11 +1,10 @@
 1)	Erkläre die Begriffe Variable und Datentyp.
 
 * Was ist eine Variable?
-	In der Informatik ist eine Variable eine Art Aufbewahrungsbox. 
-	Sie ist ein benannter Platz im Arbeitsspeicher, um Informationen zu speichern.
-	Variablen werden mit einem festen Namen definiert.
-	Ihre Information kann sich jedoch im Laufe des Programmes ändern. 
-	Damit kann man das Programm steuern, Informationen speichern und verändern.
+	Variablen sind Platzhalter für Daten, wie z. B. Zahlen oder Buchstaben. Man kann eine Variable als Speicher sehen.
+	Den Speicher kann man sich als Regal vorstellen, welches Postfächer besitzt. Die Art der Variable nennt man Datentyp
+	Je nach Datentyp wird eine bestimmte Menge Speicherplatz reserviert. Variablen können sich im Verlaufe des Programms ändern.
+	Sie sind durch einen festen Namen deklariert.
 
 * Was sind Datentypen?
 	Datentypen in der Informatik sind eine grundlegende Bestimmung, um welche Art von Daten eine Variable speichern kann.

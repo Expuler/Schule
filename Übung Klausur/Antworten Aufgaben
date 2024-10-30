@@ -1,0 +1,201 @@
+1)	Erkläre die Begriffe Variable und Datentyp.
+
+* Was ist eine Variable?
+	In der Informatik ist eine Variable eine Art Aufbewahrungsbox. 
+	Sie ist ein benannter Platz im Arbeitsspeicher, um Informationen zu speichern.
+	Variablen werden mit einem festen Namen definiert.
+	Ihre Information kann sich jedoch im Laufe des Programmes ändern. 
+	Damit kann man das Programm steuern, Informationen speichern und verändern.
+
+* Was sind Datentypen?
+	Datentypen in der Informatik sind eine grundlegende Bestimmung, um welche Art von Daten eine Variable speichern kann.
+	Zugleich bestimmt man, damit welche Operationen mit diesen Daten durch geführt werden können.
+	Man unterscheidet zwischen grundlegenden und komplexen Datentypen.
+
+	Einige Beispiele für grundlegende Datentypen sind:
+		* Integer, dies sind ganze Zahlenwerte wie 1,2,3 oder auch -1,-2,-3
+		* String, diese speichern Textzeichen wie "Hallo Welt"
+		* Boolean, diese stellt Wahrheitswerte dar wie true und false
+
+	Ein Beispiel für einen komplexen Datentyp:
+		* Arrays, dies sind Sammlung von Elementen gleiches Typen
+
+
+4) Wandle die folgenden Zahlen ins Dualsystem um: (Wert durch /2. Dann mit Ergebnis weiter rechnen. Rest ist null oder 1. Am Ende von unten nach oben aufschreiben)
+
+
+13
+254
+64
+
+13 / 2 = 6	Rest 1
+6 / 2 = 3	Rest 0
+3 / 2 = 1	Rest 1
+1 / 2 = 0	Rest 1
+
+13 -> 1101
+----------------------
+
+254 / 2 = 127 Rest	0
+127 / 2 = 63 Rest	1
+63 / 2 = 31 Rest	1
+31 / 2 = 15 Rest	1
+15 / 2 = 7 Rest		1
+7 / 2 = 3 Rest		1
+3/ 2 = 1 Rest		1
+1 / 2 = 0 Rest		1
+
+254 -> 11111110
+----------------------
+
+64 / 2 = 32 Rest	0
+32 / 2 = 16 Rest	0
+16 / 2 = 8 Rest		0
+8 / 2 = 4 Rest		0
+4 / 2 = 2 Rest		0
+2 / 2 = 1 Rest		0
+1 / 2 = 1 Rest		1
+
+64 -> 1000000
+
+
+5) Wandle die folgenden Zahlen ins Dezimalsystem um:	(Schreibe die Zahl von oben nach unten. 
+														Jetzt nimmst du die Potenz 2 und zählst die Stellenlänge der binären Zahl. 
+														Bei z. B. 6 Stellen ist deine Startzahl 5, da der Zahlenwert bei 0 anfängt und nicht bei 1!)
+101010
+1110111
+0001
+
+101010 -> sind 6 Stellen:
+1 * 2^5 = 32
+0 * 2^4 = 0
+1 * 2^3 = 8
+0 * 2^2 = 0
+1 * 2^1 = 2
+0 * 2^0 = 0
+
+32 + 0 + 8 + 0 + 2 + 0 = 42
+101010 -> 42
+------------------------------------
+
+1110111 -> sind 7 Stellen:
+1 * 2^6 = 64
+1 * 2^5 = 32
+1 * 2^4 = 16
+0 * 2^3 = 0
+1 * 2^2 = 4
+1 * 2^1 = 2
+1 * 2^0 = 1
+
+64 + 32 + 16 + 0 + 4 + 2 + 1 = 119
+1110111 -> 119
+------------------------------------
+
+0001 -> sind 4 Stellen:
+0 * 2^3 = 0
+0 * 2^2 = 0
+0 * 2^1 = 0
+1 * 2^0 = 1
+
+0 + 0 + 0 + 1 = 1
+0001 -> 1
+
+
+6)	Gib das Ergebnis der folgenden Operationen an: (Falls weniger als 4 Stellen von links mit 0 Füllen bis es passt)
+
+c
+9|2
+12^4
+
+12&4 -> bitweise UND-Operator (Er vergleicht die Bits der beiden Zahlen an jeder Position und gibt 1 zurück, wenn beide Bits 1 sind, sonst 0.)
+
+12 / 2 = 6	Rest 0
+6 / 2 = 3	Rest 0
+3 / 2 = 1	Rest 1
+1 / 2 = 0	Rest 1
+12 -> 1100
+
+
+4 / 2 = 2 Rest 0
+2 / 2 = 1 Rest 0
+1 / 2 = 0 Rest 1
+4 -> 0100
+
+Vergelich der einzelnen Bits von rechts nach links:
+
+  1100
+& 0100
+-------
+  0100
+
+0 * 3^2 = 0
+1 * 2^2 = 4
+0 * 1^2 = 0
+0 * 0^2 = 0
+
+0 + 4 + 0 + 0 = 4
+
+0100 -> 4
+-----------------------------------------------------
+
+9|2 -> bitweise ODER-Operator	(Der bitweise ODER-Operator vergleicht jedes Bit der beiden Zahlen und erzeugt ein Ergebnisbit nach folgender Regel:
+								 Wenn mindestens eines der verglichenen Bits 1 ist, ist das Ergebnisbit 1.
+								 Nur wenn beide verglichenen Bits 0 sind, ist das Ergebnisbit 0.)
+
+9 / 2 = 4 Rest 1
+4 / 2 = 2 Rest 0
+2 / 2 = 1 Rest 0
+1 / 2 = 0 Rest 1
+9 -> 1001
+
+
+2 / 2 = 1 Rest 0
+1 / 2 = 0 Rest 1
+2 -> 0010
+
+Vergelich der einzelnen Bits von rechts nach links:
+
+  1001
+| 0010
+-------
+  1011
+
+1 * 3^2 = 8
+0 * 2^2 = 0
+1 * 1^2 = 2  
+1 * 0^2 = 1
+
+8 + 0 + 2 + 1 = 11
+
+1011 -> 11
+-----------------------------------------------------
+
+12^4 -> XOR-Operator (exklusives ODER) (Er gibt 1 zurück, wenn genau eines der Bits 1 ist, aber nicht beide.)
+
+12 / 2 = 6	Rest 0
+6 / 2 = 3	Rest 0
+3 / 2 = 1	Rest 1
+1 / 2 = 0	Rest 1
+12 -> 1100
+
+
+4 / 2 = 2 Rest 0
+2 / 2 = 1 Rest 0
+1 / 2 = 0 Rest 1
+4 -> 0100
+
+Vergelich der einzelnen Bits von rechts nach links:
+
+  1100
+^ 0100
+-------
+  1000
+
+1 * 3^2 = 8
+0 * 2^2 = 0
+0 * 1^2 = 0  
+0 * 0^2 = 0
+
+8 + 0 + 0 + 0 = 8
+
+1000 -> 8

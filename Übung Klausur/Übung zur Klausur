@@ -9,49 +9,53 @@
 
 4)	Wandele die folgenden Zahlen in das Dualsystem um:
 
-13
-254
-64
+	13
+	254
+	64
 
 
 5)	Wandle die folgenden Zahlen in das Dezimalsystem um:
 
-101010
-1110111
-0001
+	101010
+	1110111
+	0001
 
 
 6)	Gib das Ergebnis der folgenden Operationen an:
 
-12&4
-9|2
-12^4
+	12&4
+	9|2
+	12^4
 
 
-7)	Schreibe eine while-Schleife die dauerhaft läuft, es sei denn x wird eingegeben. Hierzu gibt es zwei Möglichkeiten, setze beide um:
+7)	Schreibe eine while-Schleife die dauerhaft läuft, es sei denn x wird eingegeben. 
+	Hierzu gibt es zwei Möglichkeiten, setze beide um:
 
-a)	Eine While-Schleife mit der Bedingung true, bei der über eine IF-Abfrage das x abgefragt wird und bei entsprechender Eingabe aus dem IF-Zweig die Schleife abgebrochen wird.
+a)	Eine While-Schleife mit der Bedingung true, bei der über eine IF-Abfrage das x abgefragt wird
+	und bei entsprechender Eingabe aus dem IF-Zweig die Schleife abgebrochen wird.
 b)	Eine While-Schliefe die zur Bedingung hat, dass die Eingabe nicht x sein darf.
 
 
-8)	Schreibe ein Programm welches solange einzelne Worte einliest und zu einem String zusammenfügt (string = string + neuerString oder string+=neuerString) bis die Eingabe „Ende“ lautet.
-Dann soll der String ausgegeben werden. Falls der eingelesene String dabei „Corona“ heißt, soll er nicht an den Ausgabestring angefügt werden (continue).
+8)	Schreibe ein Programm welches solange einzelne Worte einliest und zu einem String zusammenfügt 
+	(string = string + neuerString oder string+=neuerString) bis die Eingabe „Ende“ lautet.
+	Dann soll der String ausgegeben werden. Falls der eingelesene String dabei „Corona“ heißt, 
+	soll er nicht an den Ausgabestring angefügt werden (continue).
 
 
 9)	In einer While-Schleife soll das Alter einer Person eingegeben werden,
-falls das Alter nicht zwischen 5 und 100 liegt soll die Schleife wiederholt werden,
-ansonsten soll es mit der Meldung „akzeptiert!“ beendet werden. Wichtig ist dabei,
-dass die Schleife mindestens einmal durchlaufen werden muss.
+	falls das Alter nicht zwischen 5 und 100 liegt soll die Schleife wiederholt werden,
+	ansonsten soll es mit der Meldung „akzeptiert!“ beendet werden. Wichtig ist dabei,
+	dass die Schleife mindestens einmal durchlaufen werden muss.
 
 
 10)	Implementiere das nebenstehende Programm:
 
-								int zaehler = 3
-								solange(zaehler>0)
-								passwort = Eingabe von Konsole
-								passwort == „geheim“?
-							ja									nein
-					Ausgabe: „Angemeldet!“						  /
-						   break
-											zaehler --
-					Ausgabe:„Falsches Passwort, noch [zaehler] Versuche!“
+					int zaehler = 3
+					solange(zaehler>0)
+				passwort = Eingabe von Konsole
+					passwort == „geheim“?
+			ja									nein
+	Ausgabe: „Angemeldet!“						  /
+			break
+												zaehler --
+						Ausgabe:„Falsches Passwort, noch [zaehler] Versuche!“

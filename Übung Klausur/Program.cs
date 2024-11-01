@@ -12,7 +12,6 @@ namespace Übung_Klausur
     {
         static void Main(string[] args)
         {
-            PasswortEingabe();
         }
 
         static void TypKonvertierung() // 2)
